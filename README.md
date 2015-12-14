@@ -18,7 +18,7 @@ const values = {
   State: ''
 };
 
-validator.validate(schema, values)
+validator.validate(schema.validate, values)
   .then(({valid, errors}) => console.log(valid, errors))
 ;
 
