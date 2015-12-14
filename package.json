@@ -1,5 +1,6 @@
 {
   "name": "ahri-sales-schema",
+  "description": "Schema for AHRI Sales data.",
   "version": "0.1.0",
   "repository": {
     "type": "git",
