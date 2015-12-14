@@ -1,10 +1,10 @@
 {
-  "name": "ahri-sales-schema",
-  "description": "Schema for AHRI Sales data.",
+  "name": "@nib/ahri-sales-schema",
   "version": "0.1.0",
+  "description": "Schema for AHRI Sales data.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jameslnewell/redux-formo.git"
+    "url": "git@github.com:nib-health-funds/ahri-sales-schema.git"
   },
   "license": "MIT"
 }
