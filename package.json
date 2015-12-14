@@ -6,5 +6,8 @@
     "type": "git",
     "url": "git@github.com:nib-health-funds/ahri-sales-schema.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@nib/validation-methods": "^0.1.0"
+  }
 }
