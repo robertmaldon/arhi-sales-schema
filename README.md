@@ -1,16 +1,16 @@
-# @nib/ahri-sales-schema
+# @nib/arhi-sales-schema
 
-Schema for AHRI Sales data.
+Schema for ARHI Sales data.
 
 ## Installation
 
-    npm install --save @nib/ahri-sales-schema
+    npm install --save @nib/arhi-sales-schema
 
 ## Usage
 
 ```javascript
 import validator from '@nib/schema-validation';
-import schema from '@nib/ahri-sales-schema';
+import schema from '@nib/arhi-sales-schema';
 
 const values = {
   FirstName: 'John',
