@@ -13,9 +13,10 @@ import validator from '@nib/schema-validation';
 import schema from '@nib/arhi-sales-schema';
 
 const values = {
-  FirstName: 'John',
-  PhoneHome: '',
-  State: ''
+  firstName: 'John',
+  phoneHome: '',
+  state: '',
+  scale: ''
 };
 
 validator.validate(schema.validate, values)
