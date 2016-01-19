@@ -9,7 +9,7 @@ Schema for ARHI Sales data.
 ## Usage
 
 ```javascript
-import validator from '@nib/schema-validation';
+import validator from '@nib/schema-validator';
 import schema from '@nib/arhi-sales-schema';
 
 const values = {
@@ -19,7 +19,7 @@ const values = {
   scale: ''
 };
 
-validator.validate(schema.validate, values)
+validator.validate(schema.filter, schema.validate, values)
   .then(({valid, errors}) => console.log(valid, errors))
 ;
 
