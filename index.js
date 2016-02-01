@@ -1,5 +1,5 @@
 var validate = require('@nib/validation-methods');
-var filters = require('lib/filters');
+var filters = require('./lib/filters');
 
 const REGEX_NAME = /^[a-zA-Z0-9\-\/' ]*$/;
 const REGEX_PHONE = /^\d+$/;
