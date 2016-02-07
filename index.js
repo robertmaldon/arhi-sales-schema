@@ -7,7 +7,9 @@ const REGEX_STARTS_WITH_ZERO = /^0/;
 
 module.exports = {
   firstName: {
-      filters: [],
+      filters: [
+          filters.toTitleCase
+      ],
       validators: [
         [validate.maxlength(24), 'Sorry, our system can only handle up to 24 characters.'],
         [validate.regex(REGEX_NAME), 'First name contains invalid characters']
