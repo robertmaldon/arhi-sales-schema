@@ -59,6 +59,15 @@ module.exports = {
         default: 'NSW'
       }
   },
+  paymentFrequency: {
+      filters: [],
+      validators: [
+        [validate.in(['Weekly', 'Fortnightly', 'Monthly', 'Quarterly', 'HalfYearly', 'Yearly']), 'Payment Frequency must be one of the following values (Weekly, Fortnightly, Monthly, Quarterly, HalfYearly, Yearly)']
+      ],
+      empty: {
+        default: 'Weekly'
+      }
+  },
   visitorType: {
       filters: [],
       validators: [
