@@ -27,6 +27,15 @@ module.exports = {
         default: null
       }
   },
+  excess: {
+      filters: [],
+      validators: [
+        [validate.in(['250', '500']), 'Excess must be one of the following values (250, 500)']
+      ],
+      empty: {
+        default: 500
+      }
+  },
   phoneNumber: {
       filters: [
           filters.removeNonNumericCharacters
