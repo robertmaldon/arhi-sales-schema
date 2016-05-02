@@ -86,6 +86,15 @@ module.exports = {
         default: null
       }
   },
+  productType: {
+      filters: [],
+      validators: [
+        [validate.in(['hospital', 'extras', 'packaged']), 'Product type must be one of the following preceeding values']
+      ],
+      empty: {
+        default: 'packaged'
+      }
+  },
   hasCompletedAboutYou: {
       filters: [],
       validators: [
