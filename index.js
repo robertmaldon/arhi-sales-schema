@@ -30,7 +30,7 @@ module.exports = {
   excess: {
       filters: [],
       validators: [
-        [validate.in(['250', '500']), 'Excess must be one of the following values (250, 500)']
+        [validate.in([250, 500]), 'Excess must be one of the following values (250, 500)']
       ],
       empty: {
         default: 500
@@ -89,10 +89,10 @@ module.exports = {
   productType: {
       filters: [],
       validators: [
-        [validate.in(['hospital', 'extras', 'packaged']), 'Product type must be one of the following preceeding values']
+        [validate.in(['Hospital', 'Extras', 'Packaged']), 'Product type must be one of the following values (Hospital, Extras, Packaged)']
       ],
       empty: {
-        default: 'packaged'
+        default: 'Packaged'
       }
   },
   hasCompletedAboutYou: {
