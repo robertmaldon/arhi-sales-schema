@@ -28,7 +28,9 @@ module.exports = {
       }
   },
   excess: {
-      filters: [],
+      filters: [
+		filters.castToNumber
+	  ],
       validators: [
         [validate.in([250, 500]), 'Excess must be one of the following values (250, 500)']
       ],
