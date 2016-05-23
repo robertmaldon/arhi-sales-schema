@@ -97,6 +97,55 @@ module.exports = {
         default: 'Packaged'
       }
   },
+  hospitalProduct: {
+    filters: [],
+    validators: [
+      [validate.required]
+    ],
+    empty: {
+      default: {}
+    },
+    children: {
+      code: {
+        filters: [],
+        validators: [
+          [validate.in(['BASIC', 'STANDARD', 'ADVANTAGE', 'TOP_WITH_OBS']), 'Hospital Product Code must be one of the following values (BASIC, STANDARD, ADVANTAGE, TOP_WITH_OBS)']
+        ],
+        empty: {
+          default: {}
+        }
+      }
+    }
+  },
+  extrasProduct: {
+    filters: [],
+    validators: [
+      [validate.required]
+    ],
+    empty: {
+      default: {}
+    },
+    children: {
+      code: {
+        filters: [],
+        validators: [
+          [validate.in(['CORE', 'COREPLUS', 'TOP']), 'Extras Product Code must be one of the following values (CORE, COREPLUS, TOP)']
+        ],
+        empty: {
+          default: ''
+        }
+      },
+      bundleCodes: {
+        filters: [],
+        validators: [
+          [validate.array]
+        ],
+        empty: {
+          default: []
+        }
+      }
+    }
+  },
   hasCompletedAboutYou: {
       filters: [],
       validators: [
