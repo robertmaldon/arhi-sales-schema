@@ -1,6 +1,6 @@
 {
   "name": "@nib/arhi-sales-schema",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "description": "Schema for ARHI Sales data.",
   "repository": {
     "type": "git",
