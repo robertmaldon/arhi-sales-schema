@@ -138,7 +138,7 @@ module.exports = {
       bundleCodes: {
         filters: [],
         validators: [
-          [validate.array]
+          [validate.isSubsetOf(['Wellbeing', 'Family', 'YoungAtHeart']), 'Extras Bundle Codes must be one or more of the following (Wellbeing, Family, YoungAtHeart)']
         ],
         empty: {
           default: []
