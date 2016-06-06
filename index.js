@@ -154,5 +154,12 @@ module.exports = {
       empty: {
         default: false
       }
+  },
+  customerNumber: {
+      filters: [],
+      validators: [],
+      empty: {
+          default: null
+      }
   }
 };
