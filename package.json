@@ -1,6 +1,6 @@
 {
   "name": "@nib/arhi-sales-schema",
-  "version": "2.6.1",
+  "version": "2.6.4",
   "description": "Schema for ARHI Sales data.",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@nib/validation-methods": "^1.2.0",
+    "@nib/validation-methods": "^1.2.1",
     "upper-case-first": "^1.1.2"
   }
 }
